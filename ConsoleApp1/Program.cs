@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IO;
+
+using System.Text.Json;
 using System.Collections.Generic;
 namespace MiPrimeraApp
 {
@@ -9,14 +12,29 @@ namespace MiPrimeraApp
         static void Main(string[] args)
         {
             // Escribe una línea de texto en la consola.
-            Console.WriteLine("¡Hola, Mundo!");
-            Console.WriteLine("IM JUST A REGULAR EVERY DAY NORMAL MOTHER FUCKER");
+            Console.WriteLine("{0,-20} {1,-5}","","BIENVENIDO A TU ORGANIZADOR DE TAREAS!");
+            Console.WriteLine("\n");
+
+            TaskOption task1 = new TaskOption("","" );
+
+            List<TaskOption> tasksList = new List<TaskOption>();
+                       
+
+            
            
+            
+            foreach (var task in tasksList)
+            {
+                Console.WriteLine("{0,-20} {1,-30} {2,-10} {3,-20}", "ID", "Descripcion", "Creada:", "Estado");
+                Console.WriteLine(new string('-', 80));
+                Console.WriteLine("{0,-10} {1,-8}", $"{task1.Id}", $"{task}", $"{task1.CreatedAt} creada en,", " actualizada en ", $"{task1.Estado}");
+            }
 
-            List<string> tasks = new List<string> { };
 
-            tasks.Add("MMG");
-            Console.WriteLine(tasks[0]);
+             
+
+            
+             
              Console.ReadLine();
 
         }

@@ -4,10 +4,28 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace MiPrimeraApp
 {
-    // Define la clase principal del programa.
+
    public class TaskOption
     {
-        // Este es el método principal que se ejecuta al iniciar el programa.
-      
+        public int Id { get; set; }
+        public string Descripcion { get; set; }
+        public string Estado { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+
+        public TaskOption(int ID, string descripcion, string estado, DateTime createdAt, DateTime updatedAt)
+        {
+            this.Id = ID;
+            this.Descripcion = descripcion;
+            this.Estado = estado;
+            this.CreatedAt = createdAt;
+            this.UpdatedAt = updatedAt;
+        }
+
+        
+            
+
+        
     }
+
 }
