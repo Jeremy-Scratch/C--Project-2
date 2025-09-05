@@ -25,25 +25,4 @@ public static class Menu
             break;
         }
     }
-    // public static void Bucle()
-    // {
-    //     Console.WriteLine("1. Volver al menu principal.\n2. Salir de la aplicacion.");
-    //     int sino = TaskOption.getContinuar();
-
-    //     if (sino == 1)
-    //     {
-    //         Console.Clear();
-    //         Menu.ShowMenu([]);          
-
-    //     }
-    //     else if (sino == 2)
-    //     {
-    //         System.Environment.Exit(0);
-    //     }
-    //     else
-    //     {
-    //         Console.WriteLine("Opcion no valida");
-    //         Menu.Bucle();
-    //     }
-    // }
 }
