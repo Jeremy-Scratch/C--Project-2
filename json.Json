@@ -1,0 +1,20 @@
+[
+  {
+    "ID": 1,
+    "Descripcion": "barrer la casa",
+    "CreatedAt": "2025-09-06T04:44:31.3264547-04:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "ID": 2,
+    "Descripcion": "lavar los platos",
+    "CreatedAt": "2025-09-06T04:44:44.1165225-04:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "ID": 3,
+    "Descripcion": "sacar la basura",
+    "CreatedAt": "2025-09-06T04:44:58.4980852-04:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  }
+]

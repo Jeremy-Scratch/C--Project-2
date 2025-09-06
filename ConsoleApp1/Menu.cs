@@ -5,7 +5,7 @@ public static class Menu
     {
         Console.WriteLine("\n");
         Console.WriteLine("{0,-20} {1,-5}", "", "BIENVENIDO A TU ORGANIZADOR DE TAREAS!\n\n\n");   
-        Console.WriteLine("\nElija una tarea a realizar...\n\n 1. Agregar nueva tarea.\n 2. Actualizar tarea.\n 3. Eliminar tarea.\n 4. Marcar como completada / en progreso.\n 5. Mostrar todas las tareas.\n 6. Mostrar las tareas completadas.\n 7. Mostrar las tareas en proceso.\n 8. Mostrar las tareas completadas\n 9. Salir...\n");
+        Console.WriteLine("\nElija una tarea a realizar...\n\n 1. Agregar nueva tarea.\n 2. Actualizar tarea.\n 3. Eliminar tarea.\n 4. Marcar como completada / en progreso.\n 5. Mostrar todas las tareas.\n 6. Mostrar las tareas completadas.\n 7. Mostrar las tareas en proceso.\n 8. Mostrar las tareas incompletas\n 9. Salir...\n");
         int ope = TaskOption.getOption();
         switch (ope)
         {
