@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Collections.Generic;
 using System.Dynamic;
 //@Jeremy_Scratch
@@ -17,7 +18,15 @@ public class TaskTracker
         if (!File.Exists("json.Json"))
         { File.WriteAllText("json.Json", "[]"); }
 
-        var tareas = TaskOption.Cargar()??[];
-        Menu.ShowMenu(tareas);
+        string jsonC = File.ReadAllText("json.Json");
+
+        List<Task>? tareas = new List<Task>();
+
+        var enumOptions = new JsonSerializerOptions
+        {
+            Converters = { new JsonStringEnumConverter() }
+        };
+        tareas = JsonSerializer.Deserialize<List<Task>>(jsonC,enumOptions);
+        Menu.ShowMenu(tareas!);
     }    
 }
