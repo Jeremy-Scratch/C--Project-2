@@ -50,7 +50,8 @@ public static class TaskOption
         string jsonSave = JsonSerializer.Serialize(tareas, enumOptions);
         File.WriteAllText("json.Json", jsonSave);
         //Mostramos que los cambios fueron realizados exitosamente
-        Console.WriteLine("Tarea agregada exitosamente");
+        Console.WriteLine("\nTarea agregada exitosamente...\nPresione cualquier tecla para volver al Menu...");
+        Console.ReadKey();        
         Menu.ShowMenu(tareas);
 
     }
@@ -74,7 +75,8 @@ public static class TaskOption
         string jsonSave = JsonSerializer.Serialize(tareas,enumOptions);
         File.WriteAllText("json.Json", jsonSave);
         // MOSTRAMOS persona ha sido Modificada Exitosamente
-        Console.WriteLine("Tarea actualizada exitosamente");
+        Console.WriteLine("\nTarea actualizada exitosamente...\nPresione cualquier tecla para volver al Menu...");
+        Console.ReadKey(); 
         Menu.ShowMenu(tareas);
     }
     public static void Delete(List<Task>? tareas)
@@ -94,7 +96,8 @@ public static class TaskOption
         string jsonSave = JsonSerializer.Serialize(tareas, enumOptions);
         File.WriteAllText("json.Json", jsonSave);
         // MOSTRAMOS persona eliminada exitosamente
-        Console.WriteLine("Tarea Eliminada exitosamente");
+        Console.WriteLine("\nTarea eliminada exitosamente...\nPresione cualquier tecla para volver al Menu...");
+        Console.ReadKey(); 
         Menu.ShowMenu(tareas);
     }
     public static void ListShow(List<Task>? tareas)
@@ -105,6 +108,8 @@ public static class TaskOption
         {
             Console.WriteLine("{0,-8} {1,-20} {2,-26} {3,-20} {4,-10} ", $"{tarea.ID}", $"{tarea.Descripcion}", $"{tarea.CreatedAt}", $" {tarea.Estado}", $" {tarea.UpdatedAt}");
         }
+        Console.WriteLine("\nPresione cualquier tecla para volver al Menu...");
+        Console.ReadKey(); 
         Menu.ShowMenu(tareas);
     }
     public static void MarkDown(List<Task>? tareas)
@@ -136,7 +141,8 @@ public static class TaskOption
         };
         string jsonSave = JsonSerializer.Serialize(tareas, enumOptions);
         File.WriteAllText("json.Json", jsonSave);
-        Console.WriteLine("Estado actualizado exitosamente");
+        Console.WriteLine("\nEstado Actualizado exitosamente...\nPresione cualquier tecla para volver al Menu...");
+        Console.ReadKey(); 
         Menu.ShowMenu(tareas);
     }
     public static void ListComp(List<Task>? tareas)
@@ -147,6 +153,8 @@ public static class TaskOption
         {
             Console.WriteLine("{0,-8} {1,-20} {2,-26} {3,-20} {4,-10} ", $"{tarea.ID}", $"{tarea.Descripcion}", $"{tarea.CreatedAt}", $" {tarea.Estado}", $" {tarea.UpdatedAt}");
         }
+        Console.WriteLine("\nPresione cualquier tecla para volver al Menu...");
+        Console.ReadKey(); 
         Menu.ShowMenu(tareas);
 
     }
@@ -158,6 +166,8 @@ public static class TaskOption
         {
             Console.WriteLine("{0,-8} {1,-20} {2,-26} {3,-20} {4,-10} ", $"{tarea.ID}", $"{tarea.Descripcion}", $"{tarea.CreatedAt}", $" {tarea.Estado}", $" {tarea.UpdatedAt}");
         }
+        Console.WriteLine("\nPresione cualquier tecla para volver al Menu...");
+        Console.ReadKey(); 
         Menu.ShowMenu(tareas);
 
     }
@@ -169,6 +179,8 @@ public static class TaskOption
         {
             Console.WriteLine("{0,-8} {1,-20} {2,-26} {3,-20} {4,-10} ", $"{tarea.ID}", $"{tarea.Descripcion}", $"{tarea.CreatedAt}", $" {tarea.Estado}", $" {tarea.UpdatedAt}");
         }
+        Console.WriteLine("\nPresione cualquier tecla para volver al Menu...");
+        Console.ReadKey(); 
         Menu.ShowMenu(tareas);
 
     }
