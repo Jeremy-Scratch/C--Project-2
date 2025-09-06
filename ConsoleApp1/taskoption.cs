@@ -66,7 +66,12 @@ public static class TaskOption
         tareas![indexIp].Descripcion = descriptionGet;
         tareas![indexIp].UpdatedAt = DateTime.Now;
         // Serealizamos la lista de objetos a jsonstring y guardamos
-        string jsonSave = JsonSerializer.Serialize(tareas);
+        var enumOptions = new JsonSerializerOptions
+        {
+            WriteIndented = true, // Organiza el Json File
+            Converters = { new JsonStringEnumConverter() }
+        };
+        string jsonSave = JsonSerializer.Serialize(tareas,enumOptions);
         File.WriteAllText("json.Json", jsonSave);
         // MOSTRAMOS persona ha sido Modificada Exitosamente
         Console.WriteLine("Tarea actualizada exitosamente");

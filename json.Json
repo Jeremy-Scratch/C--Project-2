@@ -2,19 +2,57 @@
   {
     "ID": 1,
     "Descripcion": "barrer la casa",
+    "Estado": "Incompleta",
     "CreatedAt": "2025-09-06T04:44:31.3264547-04:00",
-    "UpdatedAt": "0001-01-01T00:00:00"
+    "UpdatedAt": "2025-09-06T05:13:17.1667986-04:00"
   },
   {
     "ID": 2,
     "Descripcion": "lavar los platos",
+    "Estado": "En_Proceso",
     "CreatedAt": "2025-09-06T04:44:44.1165225-04:00",
-    "UpdatedAt": "0001-01-01T00:00:00"
+    "UpdatedAt": "2025-09-06T05:16:37.3097101-04:00"
   },
   {
     "ID": 3,
     "Descripcion": "sacar la basura",
+    "Estado": "Completada",
     "CreatedAt": "2025-09-06T04:44:58.4980852-04:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "ID": 4,
+    "Descripcion": "despolvar",
+    "Estado": "Incompleta",
+    "CreatedAt": "2025-09-06T04:49:01.536793-04:00",
+    "UpdatedAt": "2025-09-06T05:13:38.5253572-04:00"
+  },
+  {
+    "ID": 5,
+    "Descripcion": "prueba update",
+    "Estado": "Completada",
+    "CreatedAt": "2025-09-06T04:58:44.4822697-04:00",
+    "UpdatedAt": "2025-09-06T05:00:03.2422299-04:00"
+  },
+  {
+    "ID": 6,
+    "Descripcion": "prueba op 2",
+    "Estado": "Completada",
+    "CreatedAt": "2025-09-06T05:05:54.0115099-04:00",
+    "UpdatedAt": "2025-09-06T05:09:10.150297-04:00"
+  },
+  {
+    "ID": 7,
+    "Descripcion": "final test",
+    "Estado": "En_Proceso",
+    "CreatedAt": "2025-09-06T05:15:27.5631108-04:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "ID": 8,
+    "Descripcion": "al final vencimos",
+    "Estado": "En_Proceso",
+    "CreatedAt": "2025-09-06T05:15:39.5677704-04:00",
     "UpdatedAt": "0001-01-01T00:00:00"
   }
 ]

@@ -20,13 +20,11 @@ public class TaskTracker
 
         string jsonC = File.ReadAllText("json.Json");
 
-        List<Task>? tareas = new List<Task>();
-
         var enumOptions = new JsonSerializerOptions
         {
             Converters = { new JsonStringEnumConverter() }
         };
-        tareas = JsonSerializer.Deserialize<List<Task>>(jsonC,enumOptions);
+        List<Task>? tareas = JsonSerializer.Deserialize<List<Task>>(jsonC,enumOptions);
         Menu.ShowMenu(tareas!);
     }    
 }
