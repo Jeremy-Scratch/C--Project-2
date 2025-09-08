@@ -21,3 +21,5 @@ The project manages tasks by saving them in a local .json file.
 • .NET 9.0 SDK: The framework used to build the application.
 
 • IDE: Developed using Visual Studio Code.
+
+https://github.com/Jeremy-Scratch/C--Project-2
